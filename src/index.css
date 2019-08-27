@@ -1,3 +1,4 @@
+/*插件自带*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +11,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*样式重置*/
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, s, strong,
+i,dl, dt, dd, ol, ul, li, form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, input,
+figure, footer, header, 
+menu, nav, output, section, summary, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  /*font-size: 14px;*/
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+li{
+  list-style: none;
 }
