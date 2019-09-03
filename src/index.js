@@ -1,3 +1,7 @@
+import  "react-app-polyfill/ie9";
+import  "react-app-polyfill/stable";
+// import '@babel/core/es6/map';
+// import '@babelcore/es6/set';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { Pagination } from 'antd';
 import './App.css';
-import List from './Components/List.jsx'
+import Form from './Components/Form.jsx';
+import CommentList from './Components/CommentList.jsx';
+import Comment from './Components/Comment.jsx';
+import MenuPage from './Menu.jsx';
+import ItemList from './List.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <List />
-      </header>
+      <MenuPage />
+      <div className="main">
+        <Form />
+        <ItemList />
+        <Comment />
+        <Pagination defaultCurrent={6} total={500} />
+      </div>
     </div>
   );
 }

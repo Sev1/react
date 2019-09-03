@@ -375,6 +375,12 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  // antd 的按需加载
+                  ["import", {
+                    libraryName: "antd",
+                    libraryDirectory: "es",
+                    style: "css" // `style: true` 会加载 less 文件
+                  }]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
